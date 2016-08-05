@@ -1,0 +1,11 @@
+<h1>Home#index</h1>
+<p>Hello <%=current_user.email%></p>
+<p> Your Kindle Email: <%=current_user.kindle_email%> </p>
+<p> Click this button to have us scan your inbox for articles to send to your kindle: </p>
+
+<%= link_to 'Sign out', destroy_user_session_path, :method => :delete %>
+<%=link_to "Sign Up", new_user_registration_path%>
+<%=link_to "Sign In", new_user_session_path%>
+
+
+
