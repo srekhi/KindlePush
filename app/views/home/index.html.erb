@@ -5,6 +5,8 @@
 <p> Your Kindle Email: <%=current_user.kindle_email%> </p>
 <p> Click this button to have us scan your inbox for articles to send to your kindle: </p>
 <!--insert button to click on to trigger controller action -->
+<%= button_to "Scan", emails_scan_path, :method => :get %>
+
 
 <% else %>
 <p> HELLOOOO </p>
