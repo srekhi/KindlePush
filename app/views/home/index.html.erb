@@ -1,7 +1,15 @@
 <h1>Home#index</h1>
+
+<% if user_signed_in? %>
 <p>Hello <%=current_user.email%></p>
 <p> Your Kindle Email: <%=current_user.kindle_email%> </p>
 <p> Click this button to have us scan your inbox for articles to send to your kindle: </p>
+<!--insert button to click on to trigger controller action -->
+
+<% else %>
+<p> HELLOOOO </p>
+<%end%>
+
 
 <%= link_to 'Sign out', destroy_user_session_path, :method => :delete %>
 <%=link_to "Sign Up", new_user_registration_path%>
