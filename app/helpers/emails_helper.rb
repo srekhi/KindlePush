@@ -29,9 +29,10 @@ def get_article_array(user)
 end
 
 
-def push_articles(text_of_body)
+def push_articles(article_array)
 
-  for article in array_of_articles
+  for article in article_array
+    KindleMailer.article_email(@user, article)
     #push to user's kindle email address
     
   end

@@ -1,5 +1,5 @@
 class EmailsController < ApplicationController
- require emails_helper
+ include EmailsHelper
   
   def scan
   	article_array = emails_helper.get_article_array(current_user)
