@@ -36,6 +36,8 @@ def push_articles(article_array)
     #parseArticle
     parsed_content = ReadabilityParser.parse_article(article)
 
+
+    #IN WHAT FORMAT DOES IT SAVE TO BE ATTACHED TO SEND TO KINDLE?
     KindleMailer.article_email(@user, parsed_content).deliver
     #push to user's kindle email address
     
