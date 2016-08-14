@@ -1,4 +1,5 @@
 module EmailsHelper
+include ReadabilityParser
 require 'google/apis/gmail_v1'
 require 'base64'
 Gmail = Google::Apis::GmailV1 
@@ -32,7 +33,10 @@ end
 def push_articles(article_array)
 
   for article in article_array
-    KindleMailer.article_email(@user, article)
+    #parseArticle
+    parsed_content = ReadabilityParser.parse_article(article)
+
+    KindleMailer.article_email(@user, parsed_content).deliver
     #push to user's kindle email address
     
   end
