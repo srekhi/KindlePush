@@ -11,6 +11,8 @@ def parse_article(article_url)
   return article_text
 end
 
+end
+
 
 
    

@@ -6,6 +6,9 @@ gem 'rails', '4.2.6'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
+
+gem 'bootstrap-sass'
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
@@ -13,6 +16,10 @@ gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
+gem 'font-awesome-sass'
+gem 'bootstrap-will_paginate'
+
+gem 'sprockets', '~> 3.0'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
@@ -22,10 +29,14 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-gem "twitter-bootstrap-rails"
+gem 'client_side_validations'
+
+gem 'less-rails', '~> 2.7.0'
+gem 'therubyracer' # Ruby
+gem 'less-rails-bootstrap'
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+# gem 'bcrypt', '~> 3.1.7'  
 
 # Use Unicorn as the app server
 # gem 'unicorn'
